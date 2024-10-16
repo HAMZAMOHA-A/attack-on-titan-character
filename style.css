@@ -1,28 +1,51 @@
 body {
-    background-color: purple;
-    color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
+    background-color: lightblue; /* Light blue background */
+    color: darkslategray; /* Dark slate gray text */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    margin: 20px 0;
+    background-color: teal; /* Teal header */
+    color: white; /* White text */
+    padding: 20px;
+    text-align: center;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
-.character {
-    margin: 15px;
-    border: 2px solid white;
-    border-radius: 8px;
+.character-card {
+    background-color: white; /* White card background */
+    border: 2px solid lightseagreen; /* Light sea green border */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.character-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
     padding: 10px;
-}
-
-.character img {
-    width: 100px; 
-    height: auto;
+    background-color: teal; /* Teal footer */
+    color: white; /* White text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
